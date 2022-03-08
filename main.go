@@ -13,6 +13,9 @@ func main() {
 	models.ConnectDatabase()
 
 	r.GET("/blogs", controllers.GetBlogs)
+	r.POST("/blogs", controllers.CreateBlog)
+	r.PATCH("blogs/:id", controllers.ModifyBlog)
+	r.DELETE("/blogs/:id", controllers.DeleteBlog)
 
 	r.Run()
 }

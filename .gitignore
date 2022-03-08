@@ -17,3 +17,5 @@
 # Don't share the development tools
 .vscode
 *.http
+*.rest
+__debug_bin
